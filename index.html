@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Cover Template · Bootstrap v5.0</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <!-- Main styles -->
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body class="text-center text-white">
+
+    <div id="header">
+        <div class="container cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+
+            <nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top">
+                <div class="container">
+                    <a class="navbar-brand mr-auto my-auto" href="{{ route('home') }}">
+                        TechCompany
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- Left Side Of Navbar -->
+                        <ul class="navbar-nav nav-masthead ms-auto my-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Stats</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">References</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-primary round-btn" href="{{ route('contactUs') }}">Let's Talk</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+            <div id="main-banner" class="px-3 mt-auto">
+                <h1>
+                    <a href="" class="typewrite" data-period="2000" data-type='[ "Design", "Marketing", "Development", "Consulting" ]'>
+                        <span class="wrap"></span>
+                    </a>
+                </h1>
+                <p class="pt-3">Your go-to company for web solutions.</p>
+            </div>
+            <div class="mt-auto pb-5">
+                <div class="scroll-downs mb-3">
+                    <div class="mousey">
+                        <div class="scroller"></div>
+                    </div>
+                </div>
+                <small class="text-white text-center">Scroll for <b>Details</b></small>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="featured" class="container">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, amet! Ut odio ratione voluptas officia, molestias recusandae architecto deleniti reprehenderit suscipit.</h2>
+        <a href="#" class="btn btn-primary round-btn mt-5">Let's Talk</a>
+    </div>
+
+    <div id="services" class="container">
+        <div class="section-title">
+            <h1>Our Services</h1>
+        </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat id corrupti possimus mollitia odit. Velit iste sunt esse rerum error temporibus reprehenderit voluptate consectetur perspiciatis, assumenda officia eos explicabo dolorum!</p>
+        <div class="service-list">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-3">
+                    <div class="service-tabs">
+                        <div class="d-grid">
+                            <button class="tablinks btn btn-service" onclick="openServ(event, 'marketing')" type="button" id="defaultOpen">Digital Marketing</button>
+                            <button class="tablinks btn btn-service" onclick="openServ(event, 'design')" type="button">Graphic Design</button>
+                            <button class="tablinks btn btn-service" onclick="openServ(event, 'development')" type="button">Web Development</button>
+                            <button class="tablinks btn btn-service" onclick="openServ(event, 'consulting')" type="button">Startup Consulting</button>
+                            <button class="tablinks btn btn-service" onclick="openServ(event, 'management')" type="button">Project Management</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-9">
+                    <div class="service-texts">
+                        <div id="marketing" class="tabcontent">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h1 class="mb-5">Digital Marketing</h1>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, iusto cumque! Officia, omnis aperiam eius voluptatum repudiandae sed obcaecati ab earum id dolor vero quaerat totam qui soluta fuga tempora.</p>
+                                </div>
+                                <div class="col-6 my-auto">
+                                    <img src="assets/marketing.gif" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="design" class="tabcontent">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h1 class="mb-5">Graphic Design</h1>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. omnis aperiam eius voluptatum repudiandae sed obcaecati ab earum id dolor vero quaerat totam qui soluta fuga tempora.<br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, omnis aperiam eius</p>
+                                </div>
+                                <div class="col-5 my-auto">
+                                    <img src="assets/design.gif" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="development" class="tabcontent">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h1 class="mb-5">Web Development</h1>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. omnis aperiam eius voluptatum repudiandaeab earum id dolor vero quaerat totam qui soluta fuga tempora.<br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, iusto cumque! Officia</p>
+                                </div>
+                                <div class="col-6 my-auto">
+                                    <img src="assets/development.gif" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="consulting" class="tabcontent">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h1 class="mb-5">Startup Consulting</h1>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, sed obcaecati ab earum id dolor vero quaerat totam qui soluta fuga tempora.<br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, iusto cumque! Officia, omnis</p>
+                                </div>
+                                <div class="col-6 my-auto">
+                                    <img src="assets/consulting.gif" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="management" class="tabcontent">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h1 class="mb-5">Project Management</h1>
+                                    <p>Lorem ipsum dolor sit. Laudantium, iusto cumque! Officia, omnis aperiam eius voluptatum repudiandae sed obcaecati ab earum id dolor vero quaerat totam qui soluta fuga tempora. </p>
+                                </div>
+                                <div class="col-6 my-auto">
+                                    <img src="assets/management.gif" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="callToAction" class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-4">
+                <img src="assets/future.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-8">
+                <div class="section-title">
+                    <h1>Future is Now</h1>
+                </div>                   
+                <h3 class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure rerum ipsam, inventore architecto similique ut culpa quo?</h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="wave"></div>
+
+    <div id="numbers" class="jumbotron paral paralsec">
+		<div class="container">
+            <div class="section-title">
+                <h1>500+ projects speaks volume,<br> we speak success</h1>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, exercitationem sapiente soluta placeat iure iste corrupti totam illum cupiditate. Cumque dolorem placeat repellat exercitationem ex assumenda expedita nobis fugit magni.</p>
+			<div class="row text-center">
+				<div class="col-md-3">
+					<div class="counter">
+						<h1 id="ctYears" class="timer count-title count-number" data-to="7" data-speed="3500"></h1>
+						<h5 class="count-text ">Years in Business</h5>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="counter">
+						<h1 id="ctEmployees" class="timer count-title count-number" data-to="50" data-speed="3500"></h1>
+						<h5 class="count-text ">Experts with Us</h5>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="counter">
+						<h1 id="ctClients" class="timer count-title count-number" data-to="350" data-speed="3500"></h1>
+						<h5 class="count-text">Clients Worldwide</h5>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="counter">
+						<h1 id="ctProjects" class="timer count-title count-number" data-to="500" data-speed="3500"></h1>
+						<h5 class="count-text ">Completed Projects</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h1>This is why we do what we do</h1>
+            </div>
+            <div class="row no-gutters">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-3 offset-md-2">
+                                 <img class="img-fluid" src="assets/testimonials/mock2.jpg"/>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <img src="assets/clients/micro.png" class="img-fluid testimonial-logo mb-4" alt="">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aut voluptatum quis, est modi illum repellendus rerum id fugit dolorum omnis consequuntur adipisci repudiandae qui delectus in voluptas sint quia!</p>
+                                <h5 class="mt-4">- Mark Webber, CEO of MicroEl</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-3 offset-md-2">
+                                 <img class="img-fluid" src="assets/testimonials/mock1.jpg"/>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <img src="assets/clients/eko.png" class="img-fluid testimonial-logo mb-4" alt="">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aut voluptatum quis, est modi illum repellendus rerum id fugit dolorum omnis consequuntur adipisci repudiandae qui delectus in voluptas sint quia!</p>
+                                <h5 class="mt-4">- Brenda Miller, CFO of i:eko</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-3 offset-md-2">
+                                 <img class="img-fluid" src="assets/testimonials/mock3.jpg"/>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <img src="assets/clients/schrack.png" class="img-fluid testimonial-logo mb-4" alt="">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aut voluptatum quis, est modi illum repellendus rerum id fugit dolorum omnis consequuntur adipisci repudiandae qui delectus in voluptas sint quia!</p>
+                                <h5 class="mt-4">- Jennifer Connor, CTO of Schrack</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-3 offset-md-2">
+                                 <img class="img-fluid" src="assets/testimonials/mock4.jpg"/>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <img src="assets/clients/dun.png" class="img-fluid testimonial-logo mb-4" alt="">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aut voluptatum quis, est modi illum repellendus rerum id fugit dolorum omnis consequuntur adipisci repudiandae qui delectus in voluptas sint quia!</p>
+                                <h5 class="mt-4">- Jack Brown, founder of Dun & Bradstreet</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="clients" class="container-fluid">
+        <div class="container">
+            <div class="section-title">
+                <h1>Our Clients</h1>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <a href="#" class="clients">
+                        <img class="image-main img-fluid" src="assets/clients/dun-h.png" />
+                        <img class="image-hover img-fluid" src="assets/clients/dun.png" />
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="#" class="clients">
+                        <img class="image-main img-fluid" src="assets/clients/eko-h.png" />
+                        <img class="image-hover img-fluid" src="assets/clients/eko.png" />
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="#" class="clients">
+                        <img class="image-main img-fluid" src="assets/clients/micro-h.png" />
+                        <img class="image-hover img-fluid" src="assets/clients/micro.png" />
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="#" class="clients">
+                        <img class="image-main img-fluid" src="assets/clients/ms-h.png" />
+                        <img class="image-hover img-fluid" src="assets/clients/ms.png" />
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="#" class="clients">
+                        <img class="image-main img-fluid" src="assets/clients/schrack-h.png" />
+                        <img class="image-hover img-fluid" src="assets/clients/schrack.png" />
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="#" class="clients">
+                        <img class="image-main img-fluid" src="assets/clients/termostroj-h.png" />
+                        <img class="image-hover img-fluid" src="assets/clients/termostroj.png" />
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="#" class="clients">
+                        <img class="image-main img-fluid" src="assets/clients/dun-h.png" />
+                        <img class="image-hover img-fluid" src="assets/clients/dun.png" />
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="#" class="clients">
+                        <img class="image-main img-fluid" src="assets/clients/eko-h.png" />
+                        <img class="image-hover img-fluid" src="assets/clients/eko.png" />
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="#" class="clients">
+                        <img class="image-main img-fluid" src="assets/clients/micro-h.png" />
+                        <img class="image-hover img-fluid" src="assets/clients/micro.png" />
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="#" class="clients">
+                        <img class="image-main img-fluid" src="assets/clients/ms-h.png" />
+                        <img class="image-hover img-fluid" src="assets/clients/ms.png" />
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="#" class="clients">
+                        <img class="image-main img-fluid" src="assets/clients/schrack-h.png" />
+                        <img class="image-hover img-fluid" src="assets/clients/schrack.png" />
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="#" class="clients">
+                        <img class="image-main img-fluid" src="assets/clients/termostroj-h.png" />
+                        <img class="image-hover img-fluid" src="assets/clients/termostroj.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="hills"></div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h1>Get In Touch</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-5 mb-3">
+                    <form class="contact1-form validate-form mx-auto">
+                        <div class="wrap-input1 validate-input" data-validate="Name is required">
+                            <input class="input1" type="text" name="name" placeholder="Name">
+                            <span class="shadow-input1"></span>
+                        </div>
+                        <div class="wrap-input1 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                            <input class="input1" type="text" name="email" placeholder="Email">
+                            <span class="shadow-input1"></span>
+                        </div>
+                        <div class="wrap-input1 validate-input" data-validate="Subject is required">
+                            <input class="input1" type="text" name="subject" placeholder="Subject">
+                            <span class="shadow-input1"></span>
+                        </div>
+                        <div class="wrap-input1 validate-input" data-validate="Message is required">
+                            <textarea class="input1" name="message" placeholder="Message"></textarea>
+                            <span class="shadow-input1"></span>
+                        </div>
+                        <div class="container-contact1-form-btn pt-4">
+                            <button class="btn btn-primary round-btn">Send Email</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-md-6 offset-md-1">
+                    <div class="row no-gutters">
+                        <div class="col-12 contact-info">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, mollitia non, molestiae nam repudiandae sapiente quisquam suscipit, molestias autem velit et! At vitae voluptas animi error eveniet voluptates repellat ex?<br><br>
+                            “Technology is an active attitude towards nature” (H. Burger – Yugoslavian philosopher)</p>
+                            <ul class="contact-ul">
+                                <li><i class="fa fa-map-marker"></i>Ulica slobode 40, 21000 Split, Croatia</li>
+                                <li><i class="fa fa-phone"></i>+385 (0) 97 613 2503</li>
+                                <li><i class="fa fa-envelope-o"></i>tinobotic@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-auto text-white-50">
+        <p>&copy 2021, designed by <a href="https://tino.figaro.hr" class="text-white">Tino Botic</a> for job application purposes.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script>
+        jQuery(document).ready(function($){
+          $('.owl-carousel').owlCarousel({
+            autoplay:true,
+            loop:true,
+            dots: false,
+            margin:10,
+            nav:true,
+            lazyLoad: true,
+            navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+            responsive:{
+              0:{
+                items:1
+              },
+              600:{
+                items:1
+              },
+              1000:{
+                items:1
+              }
+            }
+          })
+        })
+        </script>
+
+  </body>
+</html>
